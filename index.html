@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <div class="ball">
+    </div>
+    <div class="shadow"></div>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">About</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">Portfolio</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">Contact</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1>AHMED-IMANE FALAH</h1>
+        <h2>Modélisation 3D / Dessin / Animation</h2>
+        <div id="menu">
+            <a onclick="showabout()">About</a>
+            <a onclick="showwork()">Portfolio</a>
+            <a onclick="showcontact()">Contact</a>
+        </div>
+        <table>
+                <tr>
+                    <td class="animated zoomIn" style="animation-delay:2.2s;"><a href="https://www.facebook.com/Ahmedimane.falah/" target="_blank" class="social"><i class="fab fa-facebook"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a href="https://xiapen.artstation.com" target="_blank" class="social"><i class="fab fa-artstation"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.6s;"><a href="https://www.instagram.com/xiapen/" target="_blank" class="social"><i class="fab fa-instagram"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.8s;"><a href="https://www.linkedin.com/in/ahmed-imane-f-340806178/" target="_blank" class="social"><i class="fab fa-linkedin"></i></a></td>
+                </tr>
+        </table>
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>Portfolio.</h1>
+        <section>
+            <section class="portfolio section bd-container" id="portfolio">
+                <span class="section-subtitle">Mes projets</span>
+                <h2 class="section-title">En construction !</h2>
+
+                <div class="portfolio__nav">
+                    <span class="portfolio__item active--portfolio"data-filter="all">All</span>
+                    <span class="portfolio__item" data-filter=".web">Web Design</span>
+                    <span class="portfolio__item" data-filter=".ux">3D</span>
+                    <span class="portfolio__item" data-filter=".app">Dessin</span>
+                </div>
+                <div class="portfolio__container bd-grid">
+                    <div class="portfolio__content mix web">
+                        <a href="#" class=""><img src="img/Future design.jpg" alt="" class="portfolio__img"></a>
+                        <div class="portfolio__data">
+                            <span class="portfolio__subtitle">Web Design</span>
+                          
+                        </div>
+                        
+                    </div>
+                    <div class="portfolio__content mix web">
+                        <a href="#" class=""><img src="img/QUAI_HAVRE-CAUMARTIN AI F.jpg" alt="" class="portfolio__img"></a>
+                        <div class="portfolio__data">
+                            <span class="portfolio__subtitle">Web Design</span>
+                         
+                        </div>
+                        
+                    </div>
+                    <div class="portfolio__content mix ux">
+                        <a href="#" class=""><img src="img/Pizza.jpg" alt="" class="portfolio__img"></a>
+                        <div class="portfolio__data">
+                            <span class="portfolio__subtitle">3D</span>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="portfolio__content mix ux">
+                        <a href="#" class=""><img src="img/The Circus Show.jpg" alt="" class="portfolio__img"></a>
+                        <div class="portfolio__data">
+                            <span class="portfolio__subtitle">3D</span>
+                          
+                        </div>
+                        
+                    </div>
+                    <div class="portfolio__content mix app">
+                        <a href="#" class=""><img src="img/Husky v3.jpg" alt="" class="portfolio__img"></a>
+                        <div class="portfolio__data">
+                            <span class="portfolio__subtitle">Dessin</span>
+                           
+                        </div>
+                        
+                    </div>
+                    <div class="portfolio__content mix app">
+                        <a href="#" class=""><img src="img/Maelle.jpg" alt="" class="portfolio__img"></a>
+                        <div class="portfolio__data">
+                            <span class="portfolio__subtitle">Dessin</span>
+                           
+                        </div>
+                        
+                    </div>
+                </div>
+            
+            </section>
+        
+    </div>
+    <div id="about_container" class="container">
+            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+            <h1>About.</h1>
+            <section>
+                <h2>Qui suis-je</h2>
+                <p>
+                    Je poursuis des études avec l’objectif de devenir animateur 3D, c’est une vocation pour moi qui suis passionné par la modélisation, le dessin, les nouvelles technologies 
+                    et les jeux vidéos. 
+                </p>
+                <p>
+                    Actuellement, je suis à la recherche d’un stage d’une durée de deux mois à partir de mi-février 2021 afin d’améliorer mes compétences.
+                </p>
+            </section>
+            <section>
+                <h2>Compétences</h2>
+                <div id="used">
+                    <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Adobe Suite</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Maya 3D</div>
+                    <div><i class="fas fa-circle"></i>&nbsp;Blender</div>
+                </div>
+            </section>
+        </div>
+          <div id="contact_container" class="container">
+            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+            <h1>Contact.</h1>
+            <section>
+                <h2>contact me</h2>
+                <p>
+                    <form>
+                        <input type="text" placeholder="name" required>
+                        <input type="email" placeholder="email" required><br>
+                        <textarea placeholder="your message" required rows="5"></textarea><br>
+                        <button class="btn_one">send</button>
+                    </form> 
+                </p>
+            </section>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js" integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.js" integrity="sha512-fuxK9KrfYYxsXOm+VTYLEX3vOKymX2CDP+X1q0vsTwe9LPyJBSC3LXPu79ZNZiNCFrSzzMklmp5bU9Da/1TQEw==" crossorigin="anonymous"></script>
+        <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script> 
+
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    
+</body>
+</html>
